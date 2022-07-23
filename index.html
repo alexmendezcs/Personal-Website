@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!------------------------  HERO -------------------------------------------> 
     <section class="hero">
         <nav>
             <img class="logo" src="src/images/logo.png" alt="Alejandro Mendez's Logo">
@@ -32,7 +33,7 @@
             </div>
             <div class="socials">
                 <div>
-                    <a href="https://www.twitter.com" class="social">
+                    <a href="https://www.twitter.com" class="social" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50"
                             viewBox="0 0 24 24">
                             <path
@@ -41,7 +42,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/in/alexmendezcs/" class="social">
+                    <a href="https://www.linkedin.com/in/alexmendezcs/" class="social" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50"
                             viewBox="0 0 24 24">
                             <path
@@ -50,7 +51,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="https://github.com/alexmendezcs" class="social"><svg xmlns="http://www.w3.org/2000/svg"
+                    <a href="https://github.com/alexmendezcs" class="social" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                             fill="#ffffff" width="50" height="50" viewBox="0 0 24 24">
                             <path
                                 d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
@@ -60,32 +61,41 @@
             </div>
         </div>
     </section>
+    <!------------------------  ABOUT ME  ------------------------------------------->
     <section class="sub-section" id="about-me">
         <div class="information">
             <h2>About Me</h2>
-            <p>Hello, my name is Alejandro Mendez. I am trying to land my first developer job and I am passionate about
-                technology. Thank you for visting my website! </p>
+            <p>Hello, my name is Alejandro Mendez, thank you for visiting my website! This website will be my personal porfolio in hopes to 
+                land my first developer job. I graduated from University of Houston - Downtown back in December of 2019 and have been working at 
+                <a href="https://www.insite360suite.com/" target="_blank">Insite 360</a> as an Alarm Management Specialist for almost two years now. 
+                I am passionate about technology and new challenges and hope you can see that while visiting my website.  
+            </p>
         </div>
         <div class="headshot-container">
             <img class="headshot" src="src/images/headshot.jpg" alt="Alejandro Mendez Headshot">
         </div>
     </section>
+    <hr>
+        <!------------------------  PROJECTS  ------------------------------------------->
     <section class="sub-section-alternative" id="projects">
         <h2>Projects</h2>
         <div class="project-container">
             <div class="project-card">
-                <img class="project-image" src="src/images/project1.jpg" alt="Project One Image">
-                <h3>Project One</h3>
-                <p class="subtext">This is is my project. This is some text about it. I enjoyed making this project</p>
+                <img class="project-image" src="src/images/python.png" alt="Django Project">
+                <h3>Personal Blog</h3>
+                <p class="subtext">Created a personal blog using the Django framework. 
+                    Deployed the application unto a Linux Server from sratch using Linode.
+                    Set up AWS S3 to host media files. 
+                </p>
                 <hr>
-                <p class="subtext"><a class="project-link" href="https://github.com/alexmendezcs">View Here</a></p>
+                <p class="subtext"><a class="project-link" href="https://www.alexcsblog.com/">View Here</a></p>
             </div>
             <div class="project-card">
                 <img class="project-image" src="src/images/project2.jpg" alt="Project Two Image">
                 <h3>Project Two</h3>
                 <p class="subtext">This is is my project. This is some text about it. I enjoyed making this project</p>
                 <hr>
-                <p class="subtext"><a class="project-link" href="https://github.com/alexmendezcs">View Here</a></p>
+                <p class="subtext"><a class="project-link" href="https://github.com/alexmendezcs" target="_blank">View Here</a></p>
             </div>
             <div class="project-card">
                 <img class="project-image" src="src/images/project3.jpg" alt="Project Three Image">
@@ -103,11 +113,15 @@
             </div>
         </div>
     </section>
-    <footer id="contact-me">
-        <h2>Contact Me</h2>
-        <p>alexmendezcs@gmail.com</p>
-    </footer>
+            <!------------------------  CONTACT ME  ------------------------------------------->
+            <!-- <footer id="contact-me">
+                <form action="https://formsubmit.co/alexmendezcs@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email Address"required>
+                    <button type="submit">Send</button>
+                    <input type="hidden" name="_next" value="https://alexmendezcs/pages/thanks.html">
+               </form>
+            </footer> -->
     <script src="src/app.js"></script>
 </body>
-
 </html>

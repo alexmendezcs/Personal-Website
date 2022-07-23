@@ -23,6 +23,7 @@ footer {
 nav {
     display: flex;
     justify-content: space-between;
+    padding: 30px;
 }
 
 ul {
@@ -101,8 +102,8 @@ p {
 }
 
 .logo {
-    height: 200px;
-    margin: 20px;
+    height: 150px;
+    margin: 0px;
 }
 
 .social {
@@ -154,8 +155,8 @@ p {
 
 .project-image {
     margin-top: 25px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 500px;
 }
 
@@ -172,6 +173,11 @@ hr {
 a {
     text-decoration: none;
     color: white;
+}
+
+#about-me a {
+    text-decoration: none;
+    color: blue;
 }
 
 .hamburger {
